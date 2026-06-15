@@ -6,6 +6,13 @@ environments:
 - name: staging
 - name: prod
 plugins:
+  extractors:
+  - name: tap-klaviyo
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-klaviyo.git@v0.1.1
+  - name: tap-netsuite
+    variant: hotgluexyz
+    pip_url: git+https://github.com/hotgluexyz/tap-netsuite.git
   loaders:
   - name: target-bigquery
     variant: matatika

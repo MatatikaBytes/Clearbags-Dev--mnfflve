@@ -1,0 +1,79 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-klaviyo",
+  "namespace": "tap_klaviyo",
+  "variant": "meltanolabs",
+  "label": "Klaviyo",
+  "docs": "https://www.matatika.com/data-details/tap-klaviyo/",
+  "repo": "https://github.com/MeltanoLabs/tap-klaviyo",
+  "pip_url": "git+https://github.com/MeltanoLabs/tap-klaviyo.git@v0.1.1",
+  "description": "Klaviyo is an email marketing and automation platform for ecommerce businesses.\n\nKlaviyo is a powerful email marketing and automation platform designed specifically for ecommerce businesses. It allows businesses to create targeted email campaigns, automate email flows, and track customer behavior to improve engagement and increase sales. With features like segmentation, A/B testing, and personalized product recommendations, Klaviyo helps businesses build strong relationships with their customers and drive revenue growth. Additionally, Klaviyo integrates with popular ecommerce platforms like Shopify, Magento, and WooCommerce, making it easy for businesses to sync their customer data and start sending targeted emails right away.",
+  "logo_url": "/assets/logos/extractors/klaviyo.png",
+  "capabilities": [
+    "catalog",
+    "discover",
+    "state"
+  ],
+  "settings": [
+    {
+      "name": "auth_token",
+      "kind": "string",
+      "label": "Auth Token",
+      "description": "The token to authenticate against the API service",
+      "hidden": false,
+      "sensitive": true,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "revision",
+      "kind": "string",
+      "label": "Revision",
+      "description": "Klaviyo API endpoint revision. https://developers.klaviyo.com/en/docs/api_versioning_and_deprecation_policy#versioning",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "start_date",
+      "kind": "date_iso8601",
+      "label": "Start Date",
+      "description": "The earliest record date to sync",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "segment_series_report_config",
+      "kind": "object",
+      "label": "Segment Series Report Config",
+      "description": "Payload for the segment series report stream.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "campaign_values_report_config",
+      "kind": "object",
+      "label": "Campaign Values Report Config",
+      "description": "Payload for the campaign values report stream.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "flow_values_report_config",
+      "kind": "object",
+      "label": "Flow Values Report Config",
+      "description": "Payload for the flow values report stream.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
+    }
+  ]
+}
