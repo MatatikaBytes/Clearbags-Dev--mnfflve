@@ -13,13 +13,6 @@ plugins:
   - name: tap-netsuite
     variant: hotgluexyz
     pip_url: git+https://github.com/hotgluexyz/tap-netsuite.git
-    settings:
-    # Override the bundled `date_iso8601` kind, which casts the value via
-    # datetime.isoformat() and strips the trailing `Z`, producing a value
-    # singer's strptime rejects ("does not match format '%Y-%m-%dT%H:%M:%SZ'").
-    # `string` passes the configured value through unchanged so the `Z` survives.
-    - name: start_date
-      kind: string
   loaders:
   - name: target-bigquery
     variant: matatika

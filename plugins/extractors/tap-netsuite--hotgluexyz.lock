@@ -87,7 +87,7 @@
     },
     {
       "name": "start_date",
-      "kind": "date_iso8601",
+      "kind": "string",
       "label": "Start Date",
       "description": "The date from which to start retrieving data from the NetSuite API.",
       "hidden": false,
