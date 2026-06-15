@@ -2,6 +2,9 @@ version: pipelines/v0.1
 label: NetSuite
 timeout: 0
 max_retries: 0
+script: |-
+  UV_OVERRIDE=$(pwd)/uv-overrides.txt meltano install extractor tap-netsuite --clean
+  meltano run --force --state-id-suffix "$PIPELINE_ID" tap-netsuite target-bigquery
 data_components:
 - tap-netsuite
 - Google BigQuery
