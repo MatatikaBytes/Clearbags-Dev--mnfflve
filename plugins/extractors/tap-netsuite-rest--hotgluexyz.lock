@@ -1,0 +1,99 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-netsuite-rest",
+  "namespace": "tap_netsuite_rest",
+  "variant": "hotgluexyz",
+  "label": "NetSuite",
+  "docs": "https://www.matatika.com/data-details/tap-netsuite-rest/",
+  "repo": "https://github.com/hotgluexyz/tap-netsuite-rest",
+  "pip_url": "git+https://github.com/hotgluexyz/tap-netsuite-rest.git",
+  "description": "NetSuite is a cloud-based business management software suite. \n\nNetSuite provides a comprehensive suite of cloud-based software solutions for businesses of all sizes, including accounting, ERP, CRM, e-commerce, inventory management, and more. It allows businesses to streamline their operations, improve efficiency, and gain real-time visibility into their financial and operational performance. With NetSuite, businesses can manage their entire business from a single, integrated platform, eliminating the need for multiple systems and reducing the risk of errors and data inconsistencies.",
+  "logo_url": "/assets/logos/extractors/netsuite.png",
+  "capabilities": [
+    "catalog",
+    "discover",
+    "state"
+  ],
+  "settings": [
+    {
+      "name": "ns_account",
+      "kind": "string",
+      "label": "NetSuite Account",
+      "description": "The unique identifier for the NetSuite account being accessed.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "ns_consumer_key",
+      "kind": "string",
+      "label": "NetSuite Consumer Key",
+      "description": "The public identifier for the application accessing the NetSuite API.",
+      "hidden": false,
+      "sensitive": true,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "ns_consumer_secret",
+      "kind": "string",
+      "label": "NetSuite Consumer Secret",
+      "description": "The private identifier for the application accessing the NetSuite API.",
+      "hidden": false,
+      "sensitive": true,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "ns_token_key",
+      "kind": "string",
+      "label": "NetSuite Token Key",
+      "description": "The unique identifier for the user accessing the NetSuite API.",
+      "hidden": false,
+      "sensitive": true,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "ns_token_secret",
+      "kind": "string",
+      "label": "NetSuite Token Secret",
+      "description": "The private identifier for the user accessing the NetSuite API.",
+      "hidden": false,
+      "sensitive": true,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "select_fields_by_default",
+      "kind": "boolean",
+      "label": "Select Fields By Default",
+      "description": "A boolean value indicating whether or not to select all fields by default when making API requests.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "is_sandbox",
+      "kind": "boolean",
+      "label": "Is Sandbox",
+      "description": "A boolean value indicating whether or not the NetSuite account being accessed is a sandbox account.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
+    },
+    {
+      "name": "start_date",
+      "kind": "string",
+      "label": "Start Date",
+      "description": "The date from which to start retrieving data from the NetSuite API.",
+      "hidden": false,
+      "sensitive": false,
+      "configured": false,
+      "protected": false
+    }
+  ]
+}

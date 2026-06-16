@@ -13,6 +13,9 @@ plugins:
   - name: tap-netsuite
     variant: hotgluexyz
     pip_url: git+https://github.com/hotgluexyz/tap-netsuite-v2.git
+  - name: tap-netsuite-rest
+    variant: hotgluexyz
+    pip_url: git+https://github.com/hotgluexyz/tap-netsuite-rest.git
   loaders:
   - name: target-bigquery
     variant: matatika
