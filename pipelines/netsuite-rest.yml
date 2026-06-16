@@ -3,5 +3,5 @@ label: NetSuite (REST)
 timeout: 21600
 max_retries: 0
 data_components:
-- tap-netsuite
+- tap-netsuite-rest
 - Google BigQuery
