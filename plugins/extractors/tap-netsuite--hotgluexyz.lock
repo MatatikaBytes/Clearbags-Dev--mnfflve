@@ -6,7 +6,7 @@
   "label": "NetSuite",
   "docs": "https://www.matatika.com/data-details/tap-netsuite/",
   "repo": "https://github.com/hotgluexyz/tap-netsuite",
-  "pip_url": "git+https://github.com/hotgluexyz/tap-netsuite.git",
+  "pip_url": "git+https://github.com/hotgluexyz/tap-netsuite-rest.git@v0.3.45",
   "description": "NetSuite is a cloud-based business management software suite. \n\nNetSuite provides a comprehensive suite of cloud-based software solutions for businesses of all sizes, including accounting, ERP, CRM, e-commerce, inventory management, and more. It allows businesses to streamline their operations, improve efficiency, and gain real-time visibility into their financial and operational performance. With NetSuite, businesses can manage their entire business from a single, integrated platform, eliminating the need for multiple systems and reducing the risk of errors and data inconsistencies.",
   "logo_url": "/assets/logos/extractors/netsuite.png",
   "capabilities": [
