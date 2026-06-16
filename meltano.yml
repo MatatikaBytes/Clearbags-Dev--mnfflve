@@ -12,7 +12,7 @@ plugins:
     pip_url: git+https://github.com/MeltanoLabs/tap-klaviyo.git@v0.1.1
   - name: tap-netsuite
     variant: hotgluexyz
-    pip_url: git+https://github.com/hotgluexyz/tap-netsuite-rest.git@v0.3.45
+    pip_url: git+https://github.com/hotgluexyz/tap-netsuite-v2.git
   loaders:
   - name: target-bigquery
     variant: matatika
